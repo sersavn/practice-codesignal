@@ -1,0 +1,6 @@
+/*Please add ; after each select statement*/
+CREATE PROCEDURE mischievousNephews()
+BEGIN
+    select weekday(mischief_date) as weekday, mischief_date, author, title from       mischief order by
+    weekday(mischief_date), length(author), author, mischief_date, title;
+END

@@ -1,0 +1,7 @@
+/*Please add ; after each select statement*/
+CREATE PROCEDURE gradeDistribution()
+BEGIN
+    SELECT Name,ID FROM Grades
+    WHERE Final > (Midterm1 * 0.5 + Midterm2 * 0.5)
+    ORDER BY LEFT(name,3), ID ASC;
+END
