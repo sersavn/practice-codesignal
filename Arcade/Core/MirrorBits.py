@@ -1,4 +1,3 @@
-Example
 
 '''
 For a = 97, the output should be
